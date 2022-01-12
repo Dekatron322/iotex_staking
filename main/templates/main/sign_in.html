@@ -1,0 +1,53 @@
+{% extends "main/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+
+		<!-- Main content -->
+		<section class="content justify-content-center align-items-center">
+			<div class="row justify-content-center align-items-center">
+
+				<div class="col-lg-4 col-12">
+
+					<div class="box">
+						<h3 class="text-center">Sign In</h3>
+
+						<div class="box-body" >
+							<div class="form-group">
+								<label class="form-label">User Name</label>
+								<div class="input-group mb-3">
+									<span class="input-group-text"><i class="ti-user"></i></span>
+									<input name="username" type="text" class="form-control" placeholder="Username">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="form-label">Password</label>
+								<div class="input-group mb-3">
+									<span class="input-group-text"><i class="ti-lock"></i></span>
+									<input name="password1" type="password" class="form-control" placeholder="Enter Password">
+								</div>
+							</div>
+
+							<button type="button" class="waves-effect waves-light btn mb-5 bg-gradient-success justify-content-center; align-items-center" style="width:360px">Sign In</button>
+							<div class="text-center">
+								<p class="mt-15 mb-0">don't have an account?<a href="{% url 'main:sign_up' %}" class="text-danger ms-5"> Sign Up</a></p>
+							</div>
+						</div>
+							
+
+		</section>
+		<!-- /.content -->
+	  </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+
+{% endblock %}
+
+

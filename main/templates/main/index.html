@@ -1,0 +1,41 @@
+{% extends "main/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+
+		<!-- Main content -->
+		<section class="content justify-content-center align-items-center">
+			<div class="row justify-content-center align-items-center">
+
+				<div class="col-lg-4 col-12">
+
+					<div class="box">
+						<h3 class="text-center">Iotexchart Staking</h3>
+						<hr>
+						
+						<div class="box-header align-items-center justify-content-center" style="align-items: center; justify-content: center;">
+							<p>the best place to stake and earn iotexchart tokens</p>
+							<a class="waves-effect waves-light btn  bg-gradient-primary" href="{% url 'main:sign_in' %}"/>Sign In</a>
+							<span>
+							<a class="waves-effect waves-light btn  bg-gradient-success" href="{% url 'main:sign_up' %}"/>Sign Up</a>
+						</span>
+						</div>
+						<div class="box-body" >
+								<p>this software is on alpha release, please DYOR</p>
+					</div>
+
+		</section>
+		<!-- /.content -->
+	  </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+
+{% endblock %}
+
+
